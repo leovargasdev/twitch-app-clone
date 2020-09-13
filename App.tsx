@@ -8,6 +8,8 @@ import {
   useFonts,
 } from '@expo-google-fonts/roboto';
 
+import { ThemeProvider } from 'styled-components';
+import dark from './src/styles/theme/dark';
 import Routes from './src/routes';
 
 export default function App() {
@@ -22,9 +24,9 @@ export default function App() {
   }
 
   return (
-    <>
+    <ThemeProvider theme={dark} >
       <Routes />
       <StatusBar style="light" />
-    </>
+    </ThemeProvider>
   );
 }
