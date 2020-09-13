@@ -20,8 +20,8 @@ export const CategoryName = styled.Text`
   margin-top: 5px;
   max-width: 98px;
 
-  color: ${({theme}) => theme.colors.secondary};
-  font-family: ${({theme}) => theme.fonts.bold};
+  color: ${({ theme }) => theme.colors.secondary};
+  font-family: ${({ theme }) => theme.fonts.bold};
   font-size: 13px;
 `;
 
@@ -31,7 +31,7 @@ export const CategoryStatus = styled.View`
 `;
 
 export const RedCircle = styled.View`
-  background: ${({theme}) => theme.colors.red};
+  background: ${({ theme }) => theme.colors.red};
   width: 9px;
   height: 9px;
   border-radius: 4.5px;
@@ -40,7 +40,6 @@ export const RedCircle = styled.View`
 export const CategoryStatusText = styled.Text`
   margin-left: 4px;
   padding-bottom: 1px;
-  color: ${({theme}) => theme.colors.gray};
-  font-family: ${({theme}) => theme.fonts.medium};
+  color: ${({ theme }) => theme.colors.gray};
+  font-family: ${({ theme }) => theme.fonts.medium};
 `;
-

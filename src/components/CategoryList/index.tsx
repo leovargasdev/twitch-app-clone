@@ -1,13 +1,21 @@
 import React from 'react';
 
-import { Container, Category, CategoryImage, CategoryName, RedCircle, CategoryStatus, CategoryStatusText  } from './styles';
+import {
+  Container,
+  Category,
+  CategoryImage,
+  CategoryName,
+  RedCircle,
+  CategoryStatus,
+  CategoryStatusText,
+} from './styles';
 
 import content from './content';
 
 const CategoryList: React.FC = () => {
   return (
     <Container>
-      {content.map( category => (
+      {content.map(category => (
         <Category key={category.name}>
           <CategoryImage source={category.source} />
           <CategoryName>{category.name}</CategoryName>
@@ -19,6 +27,6 @@ const CategoryList: React.FC = () => {
       ))}
     </Container>
   );
-}
+};
 
 export default CategoryList;

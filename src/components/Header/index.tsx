@@ -2,7 +2,14 @@ import { MaterialIcons } from '@expo/vector-icons';
 import React from 'react';
 import { useTheme } from 'styled-components';
 
-import { Container, Avatar, OnlineStatus, RightSide, Button } from './styles';
+import {
+  Container,
+  Avatar,
+  AvatarImage,
+  OnlineStatus,
+  ContentIcons,
+  ButtonIcon,
+} from './styles';
 
 const Header: React.FC = () => {
   const { colors } = useTheme();
@@ -10,20 +17,31 @@ const Header: React.FC = () => {
   return (
     <Container>
       <Avatar>
+        <AvatarImage />
         <OnlineStatus />
       </Avatar>
 
-      <RightSide>
-        <Button>
-          <MaterialIcons name="notifications-none" size={26} color={colors.secondary} />
-        </Button>
-        <Button>
-          <MaterialIcons name="notifications-none" size={26} color={colors.secondary} />
-        </Button>
-        <Button>
-          <MaterialIcons name="notifications-none" size={26} color={colors.secondary} />
-        </Button>
-      </RightSide>
+      <ContentIcons>
+        <ButtonIcon>
+          <MaterialIcons
+            name="notifications-none"
+            size={26}
+            color={colors.secondary}
+          />
+        </ButtonIcon>
+
+        <ButtonIcon>
+          <MaterialIcons
+            name="chat-bubble-outline"
+            size={26}
+            color={colors.secondary}
+          />
+        </ButtonIcon>
+
+        <ButtonIcon>
+          <MaterialIcons name="search" size={26} color={colors.secondary} />
+        </ButtonIcon>
+      </ContentIcons>
     </Container>
   );
 };

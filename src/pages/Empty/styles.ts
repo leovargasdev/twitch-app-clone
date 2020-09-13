@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 import Contstants from 'expo-constants';
 
 export const Container = styled.SafeAreaView`
-  background: ${({theme}) => theme.colors.primary};
+  background: ${({ theme }) => theme.colors.primary};
   flex: 1;
   padding-top: ${Platform.OS === 'ios' ? 0 : Contstants.statusBarHeight};
 
@@ -12,7 +12,7 @@ export const Container = styled.SafeAreaView`
 `;
 
 export const Content = styled.Text`
-  color: ${({theme}) => theme.colors.purple};
-  font-family: ${({theme}) => theme.fonts.bold};
+  color: ${({ theme }) => theme.colors.purple};
+  font-family: ${({ theme }) => theme.fonts.bold};
   font-size: 30px;
 `;
