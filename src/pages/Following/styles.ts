@@ -2,13 +2,14 @@ import { Platform } from 'react-native';
 import styled from 'styled-components/native';
 import Contstants from 'expo-constants';
 
-export const Container = styled.SafeAreaView`
+export const Container = styled.ScrollView`
   background: ${({ theme }) => theme.colors.primary};
   flex: 1;
-  /* padding-top: ${Platform.OS === 'ios' ? 0 : Contstants.statusBarHeight}; */
+  padding-top: ${Platform.OS === 'ios' ? Contstants.statusBarHeight : 0}px;
 `;
 
 export const Content = styled.View`
+  flex-direction: column;
   padding: 0 12px;
 `;
 
