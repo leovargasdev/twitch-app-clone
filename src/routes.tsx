@@ -4,7 +4,7 @@ import { useTheme } from 'styled-components';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons'
 import Following from './pages/Following';
-import ComingSoon from './pages/ComingSoon';
+import Empty from './pages/Empty';
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
@@ -40,15 +40,15 @@ const Routes: React.FC = () => {
           tabBarIcon: ({...props}) => <IconNav name="heart" {...props}/>
         }}
         />
-        <Screen name="Discover" component={ComingSoon} options={{
+        <Screen name="Discover" component={Empty} options={{
           tabBarIcon: ({...props}) => <IconNav name="compass-outline" {...props}/>
         }}
         />
-        <Screen name="Browse" component={ComingSoon} options={{
+        <Screen name="Browse" component={Empty} options={{
           tabBarIcon: ({...props}) => <IconNav name="magnify" {...props}/>
         }}
         />
-        <Screen name="Esports" component={ComingSoon} options={{
+        <Screen name="Esports" component={Empty} options={{
           tabBarIcon: ({...props}) => <IconNav name="trophy-outline" {...props}/>
         }}
         />
