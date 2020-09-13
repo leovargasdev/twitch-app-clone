@@ -1,17 +1,21 @@
-import { Platform } from 'react-native';
+import { Platform, FlatList } from 'react-native';
 import styled from 'styled-components/native';
 import Contstants from 'expo-constants';
+import { ItemFlat } from '.';
 
-export const Container = styled.ScrollView`
-  background: ${({ theme }) => theme.colors.primary};
+export const Container = styled.SafeAreaView`
   flex: 1;
+  background: ${({ theme }) => theme.colors.primary};
   padding-top: ${Platform.OS === 'ios' ? Contstants.statusBarHeight : 0}px;
 `;
 
 export const Content = styled.View`
-  flex-direction: column;
-  padding: 0 12px;
+  padding: 0 12px 90px;
 `;
+
+export const ComponentsList = styled(
+  FlatList as new () => FlatList<ItemFlat>,
+)``;
 
 export const FollowingText = styled.Text`
   padding: 10px 0;
