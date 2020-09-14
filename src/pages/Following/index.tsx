@@ -38,7 +38,7 @@ const Following: React.FC = () => {
       key: 'SectionLiveChannels',
       render: () => <SectionText>Canais ao Vivo</SectionText>,
     },
-    { key: 'LiveChannels', render: () => <StreamList /> },
+    { key: 'LiveChannels', render: () => <StreamList live /> },
 
     {
       key: 'SectionContinueWatching',

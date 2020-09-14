@@ -6,7 +6,7 @@ import { ItemFlat } from '.';
 export const Container = styled.SafeAreaView`
   flex: 1;
   background: ${({ theme }) => theme.colors.primary};
-  padding-top: ${Platform.OS === 'ios' ? Contstants.statusBarHeight : 0}px;
+  padding-top: ${Platform.OS === 'android' ? Contstants.statusBarHeight : 0}px;
 `;
 
 export const Content = styled.View`

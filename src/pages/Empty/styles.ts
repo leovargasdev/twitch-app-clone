@@ -1,12 +1,8 @@
-import { Platform } from 'react-native';
 import styled from 'styled-components/native';
-import Contstants from 'expo-constants';
 
 export const Container = styled.SafeAreaView`
   background: ${({ theme }) => theme.colors.primary};
   flex: 1;
-  padding-top: ${Platform.OS === 'ios' ? 0 : Contstants.statusBarHeight}px;
-
   justify-content: center;
   align-items: center;
 `;

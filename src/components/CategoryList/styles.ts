@@ -7,7 +7,6 @@ export const Container = styled.ScrollView.attrs({
 `;
 
 export const Category = styled.TouchableOpacity`
-  background: black;
   margin-right: 10px;
 `;
 
