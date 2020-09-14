@@ -6,6 +6,7 @@ import { View } from 'react-native';
 import Header from '../../components/Header';
 import CategoryList from '../../components/CategoryList';
 import StreamList from '../../components/StreamList';
+import ChannelList from '../../components/ChannelList';
 
 import {
   Container,
@@ -43,13 +44,13 @@ const Following: React.FC = () => {
       key: 'SectionContinueWatching',
       render: () => <SectionText>Continuar Assistindo</SectionText>,
     },
-    { key: 'ContinueWatching', render: () => <View /> },
+    { key: 'ContinueWatching', render: () => <StreamList /> },
 
     {
       key: 'SectionOfflineChannels',
       render: () => <SectionText>Canais Offline</SectionText>,
     },
-    { key: 'OfflineChannels', render: () => <View /> },
+    { key: 'OfflineChannels', render: () => <ChannelList /> },
   ];
 
   return (
