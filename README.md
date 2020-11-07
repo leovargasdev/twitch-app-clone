@@ -24,6 +24,7 @@
 Recriar a interface do [Twitch.tv](https://www.twitch.tv/) como forma de aprendizagem e treinar as skills perante o uso do React Navite. O desenvolvimento deste projeto só foi capaz graças ao [vídeo](https://www.youtube.com/watch?v=bJVp_vlvMwQ&ab_channel=Rocketseat) publicado pela Rockeseat(agradeço muito pela qualidade do conteúdo produzido).
 
 Para o desenvolvimento deste projeto foi usado o expo-cli, caso você não o tenha instalado basta seguir esse [tutorial](https://expo.io/learn).
+
 ## 📥 Instalação e execução
 
 Faça um clone desse repositório e acesse o diretório.
